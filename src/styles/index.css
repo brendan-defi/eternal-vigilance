@@ -9,9 +9,11 @@
     box-sizing: border-box;
 }
 
-html, body, #root {
-  height: 100%;
-  width: 100%;
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -54,14 +56,16 @@ ol>li {
     list-style-type: decimal;
 }
 
-ul, ol {
+ul,
+ol {
     padding-left: 10px;
     list-style-position: inside;
-  }
+}
 
-li > ul, li > ol {
+li>ul,
+li>ol {
     margin-left: 10px;
-  }
+}
 
 li:last-child {
     margin-bottom: 1rem;

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function TopBar() {
     return (
-        <header className="h-16 w-full max-w-[1200px] mx-auto">
+        <header className="h-16 w-full max-w-[1200px] mx-auto px-4 sm:px-4">
             <nav className="flex justify-between items-center">
                 <Link to="#">Site Icon</Link>
                 <Link to="#" className="hidden sm:block">

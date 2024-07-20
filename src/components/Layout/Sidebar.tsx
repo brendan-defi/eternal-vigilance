@@ -4,9 +4,9 @@ export default function Sidebar() {
     return (
         <div
             id="Sidebar"
-            className="flex flex-col justify-start items-end text-right mx-4 border-r-2 border-black"
+            className="flex flex-col items-end text-right sm:mx-4 border-r-2 border-black"
         >
-            <ul className="mx-4">
+            <ul className="w-full sm:w-auto text-xs sm:text-base space-y-1">
                 <li>
                     <Link to="/">Home</Link>
                 </li>
