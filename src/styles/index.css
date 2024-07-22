@@ -44,7 +44,6 @@ p {
 #Sidebar li {
     list-style: none;
     font-size: 1.25rem;
-    margin: 0 1rem 1rem 1rem;
 }
 
 /* Lists */
@@ -58,13 +57,13 @@ ol>li {
 
 ul,
 ol {
-    padding-left: 10px;
+    margin-left: 1rem;
     list-style-position: inside;
 }
 
 li>ul,
 li>ol {
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 li:last-child {

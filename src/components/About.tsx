@@ -8,7 +8,7 @@ export default function AboutPage() {
 
     useEffect(() => {
         const fetchAbout = async () => {
-            const post = await fetchPostText("../posts/about.md");
+            const post = await fetchPostText("src/assets/posts/about.md");
             setAbout(post);
         }
         fetchAbout();

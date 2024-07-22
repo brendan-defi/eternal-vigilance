@@ -18,7 +18,7 @@ export default function BlogPost() {
         )[0];
 
         const fetchPostMarkdown = async () => {
-            const rawPostText = await fetchPostText(`../posts/${slug}.md`);
+            const rawPostText = await fetchPostText(`src/assets/posts/${slug}.md`);
             const parsedPost = parsePost(post, rawPostText);
             setPost(parsedPost);
         };

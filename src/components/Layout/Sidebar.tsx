@@ -6,14 +6,14 @@ export default function Sidebar() {
             id="Sidebar"
             className="flex flex-col items-end text-right sm:mx-4 border-r-2 border-black"
         >
-            <ul className="w-full sm:w-auto text-xs sm:text-base space-y-1">
-                <li>
+            <ul className="w-full sm:w-auto text-xs sm:text-base ml-0 sm:ml-2">
+                <li className="mb-2 mr-2 sm:mb-4 sm:mr-4">
                     <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li className="mb-2 mr-2 sm:mb-4 sm:mr-4">
                     <Link to="/about">About</Link>
                 </li>
-                <li>
+                <li className="mb-2 mr-2 sm:mb-4 sm:mr-4">
                     <Link
                         to={`https://www.google.com/search?q=site%3Aeternalvigilance.com`}
                         target="_blank"
