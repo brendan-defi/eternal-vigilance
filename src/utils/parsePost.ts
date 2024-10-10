@@ -4,7 +4,7 @@ import { Post, PostMetadata, PostRef } from "@/src/types/post";
 
 export default function parsePost(post: PostRef, rawPostText: string): Post {
     try {
-        const [_, frontMatter, postText] = rawPostText.split("---");
+        const [, frontMatter, postText] = rawPostText.split("---");
 
         if (!frontMatter || !postText) {
             throw new Error("Invalid post format: missing front matter or post content.")

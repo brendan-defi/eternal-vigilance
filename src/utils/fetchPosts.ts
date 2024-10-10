@@ -1,8 +1,7 @@
-import fetchPostText from "./fetchPostText";
-import { postsIndex } from "../assets/posts/postsIndex";
-
-import { Post } from "../types/post";
-import parsePost from "./parsePost";
+import { postsIndex } from "@/src/assets/posts/postsIndex";
+import fetchPostText from "@/src/utils/fetchPostText";
+import parsePost from "@/src/utils/parsePost";
+import { Post } from "@/src/types/post";
 
 export default async function fetchPosts() {
     const posts: Post[] = [];

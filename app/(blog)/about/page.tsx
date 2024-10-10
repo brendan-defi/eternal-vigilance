@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
@@ -12,7 +12,7 @@ export default function AboutPage() {
         const fetchAbout = async () => {
             const post = await fetchPostText("about.md");
             setAbout(post);
-        }
+        };
         fetchAbout();
     }, []);
 

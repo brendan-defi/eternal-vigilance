@@ -1,9 +1,8 @@
 import ReactMarkdown from "react-markdown";
 
-import fetchPostText from "@/src/utils/fetchPostText";
 import { postsIndex } from "@/src/assets/posts/postsIndex";
+import fetchPostText from "@/src/utils/fetchPostText";
 import parsePost from "@/src/utils/parsePost";
-
 import { type PostRef } from "@/src/types/post";
 
 type BlogPostParams = {
