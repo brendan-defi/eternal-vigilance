@@ -1,9 +1,24 @@
+"use client"
 
+import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 
-export default async function About() {
+import fetchPostText from "@/src/utils/fetchPostText";
+
+export default function AboutPage() {
+    const [about, setAbout] = useState("");
+
+    useEffect(() => {
+        const fetchAbout = async () => {
+            const post = await fetchPostText("about.md");
+            setAbout(post);
+        }
+        fetchAbout();
+    }, []);
+
     return (
-        <div>
-            <h1>hello neo</h1>
+        <div className="about">
+            <ReactMarkdown>{about}</ReactMarkdown>
         </div>
-    )
+    );
 }
