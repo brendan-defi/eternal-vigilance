@@ -1,6 +1,6 @@
 import yaml from "js-yaml";
 
-import { Post, PostMetadata, PostRef } from "../types/post";
+import { Post, PostMetadata, PostRef } from "@/src/types/post";
 
 export default function parsePost(post: PostRef, rawPostText: string): Post {
     try {
@@ -24,7 +24,7 @@ export default function parsePost(post: PostRef, rawPostText: string): Post {
         return parsedPost;
     }
     catch (error) {
-        console.error(`Error parsing post ${post.path}: `, error);
+        console.error(`Error parsing post ${post.slug}: `, error);
         throw error;
     }
 

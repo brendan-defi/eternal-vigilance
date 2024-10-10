@@ -1,12 +1,10 @@
-import { PostRef } from "../../types/post";
+import { PostRef } from "@/src/types/post";
 
 export const postsIndex: PostRef[] = [
     {
-        path: "src/assets/posts/post1.md",
-        slug: "post1",
+        slug: "post1.md",
     },
     {
-        path: "src/assets/posts/post2.md",
-        slug: "post2",
+        slug: "post2.md",
     },
 ];

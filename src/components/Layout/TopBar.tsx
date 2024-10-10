@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 
 export default function TopBar() {
     return (
         <header className="h-16 w-full max-w-[1200px] mx-auto px-4 sm:px-4">
             <nav className="flex justify-between items-center">
-                <Link to="#">Site Icon</Link>
-                <Link to="#" className="hidden sm:block">
+                <Link href="#">Site Icon</Link>
+                <Link href="#" className="hidden sm:block">
                     Site Name
                 </Link>
                 <a

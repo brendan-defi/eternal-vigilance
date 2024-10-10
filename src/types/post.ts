@@ -1,5 +1,4 @@
 export type PostRef = {
-    path: string;
     slug: string;
 }
 

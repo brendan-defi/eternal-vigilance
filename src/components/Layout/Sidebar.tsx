@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Sidebar() {
     return (
@@ -8,14 +8,14 @@ export default function Sidebar() {
         >
             <ul className="w-full sm:w-auto text-xs sm:text-base ml-0 sm:ml-2">
                 <li className="mb-2 mr-2 sm:mb-4 sm:mr-4">
-                    <Link to="/">Home</Link>
+                    <Link href="/">Home</Link>
                 </li>
                 <li className="mb-2 mr-2 sm:mb-4 sm:mr-4">
-                    <Link to="/about">About</Link>
+                    <Link href="/about">About</Link>
                 </li>
                 <li className="mb-2 mr-2 sm:mb-4 sm:mr-4">
                     <Link
-                        to={`https://www.google.com/search?q=site%3Aeternalvigilance.com`}
+                        href={`https://www.google.com/search?q=site%3Aeternalvigilance.com`}
                         target="_blank"
                         rel="noopener noreferrer"
                     >

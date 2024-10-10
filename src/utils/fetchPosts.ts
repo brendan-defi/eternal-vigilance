@@ -8,7 +8,7 @@ export default async function fetchPosts() {
     const posts: Post[] = [];
 
     for (const post of postsIndex) {
-        const rawPostText = await fetchPostText(post.path);
+        const rawPostText = await fetchPostText(post.slug);
         const parsedPost = parsePost(post, rawPostText);
         posts.push(parsedPost);
     }
