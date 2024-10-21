@@ -1,12 +1,16 @@
-import Link from 'next/link';
+import Link from "next/link";
+import Image, { StaticImageData } from "next/image";
+import EVLogo from "@/public/logo.svg";
 
 export default function TopBar() {
     return (
         <header className="h-16 w-full max-w-[1200px] mx-auto px-4 sm:px-4">
             <nav className="flex justify-between items-center">
-                <Link href="#">Site Icon</Link>
                 <Link href="#" className="hidden sm:block">
-                    Site Name
+                    <Image
+                        src={EVLogo as StaticImageData}
+                        alt="eternal vigilance logo"
+                    />
                 </Link>
                 <a
                     href="#"
