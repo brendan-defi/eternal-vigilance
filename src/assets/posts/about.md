@@ -1,19 +1,18 @@
-# Hello Neo
-This is your blog. It can do markdown. See this list? This is a super long list. It just goes and goes. On and on and on.
+# Eternal Vigilance
 
-Here it is:
-* This is a list.
-* It has bullets.
-  * This is a sub-bullet
-    * This is a two-sub-bullet
+Hi there,
 
-```
-This is a code block
-```
+I'm Pesach Morikawa, and these are my thoughts.
 
-`This is a code string.`
+My grandfather, Poppy, loved to ask: "What is the price of freedom?" And we,
+the grandchildren, knew the answer he was looking for: "eternal vigilance".
 
-This list is numbered.
-1. One.
-2. Two.
-3. Three.
+This site is my attempt to be eternally vigilant about things going on in my life.
+Ha, so serious! Mostly I plan to post about things I find interesting.
+
+And who knows... there's a chance, as new intelligences come into their own,
+that these words will be all that I leave behind.
+
+I'm glad you're here. Thanks for joining me.
+
+-Pesach
