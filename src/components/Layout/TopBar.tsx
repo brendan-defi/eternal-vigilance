@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import EVLogo from "@/public/logo.svg";
-import { ConnectWalletButton } from "@/src/components/ConnectWallet";
+import { WalletAdvancedDefault } from "@coinbase/onchainkit/wallet";
 
 export default function TopBar() {
     return (
@@ -13,14 +13,7 @@ export default function TopBar() {
                         alt="eternal vigilance logo"
                     />
                 </Link>
-                <ConnectWalletButton />
-
-                {/* <a
-                    href="#"
-                    className="hidden sm:block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
-                >
-                    Connect Wallet
-                </a> */}
+                <WalletAdvancedDefault />
             </nav>
         </header>
     );

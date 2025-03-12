@@ -7,12 +7,14 @@ export default function parsePost(post: PostRef, rawPostText: string): Post {
         const [, frontMatter, postText] = rawPostText.split("---");
 
         if (!frontMatter || !postText) {
-            throw new Error("Invalid post format: missing front matter or post content.")
+            throw new Error(
+                "Invalid post format: missing front matter or post content.",
+            );
         }
 
         const data = yaml.load(frontMatter) as PostMetadata;
-        if (!data.Title || !data.PublishedAt) {
-            throw new Error("Invalid front matter: missing title or date.")
+        if (!data.title || !data.publishedAt) {
+            throw new Error("Invalid front matter: missing title or date.");
         }
 
         const parsedPost: Post = {
@@ -22,10 +24,8 @@ export default function parsePost(post: PostRef, rawPostText: string): Post {
         };
 
         return parsedPost;
-    }
-    catch (error) {
+    } catch (error) {
         console.error(`Error parsing post ${post.slug}: `, error);
         throw error;
     }
-
 }

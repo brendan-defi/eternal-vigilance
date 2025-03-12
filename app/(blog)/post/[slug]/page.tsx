@@ -21,7 +21,7 @@ export default async function BlogPost({ params }: BlogPostParams) {
 
     return (
         <div id="PostContainer" className="mx-4">
-            <h1>{post?.postData?.Title}</h1>
+            <h1>{post?.postData?.title}</h1>
             <ReactMarkdown>{post?.postText ?? ""}</ReactMarkdown>
         </div>
     );

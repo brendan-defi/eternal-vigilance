@@ -11,11 +11,13 @@ export default function PostsLayout({ posts }: PostsLayoutProps) {
                     <div key={post.postRef.slug} className="mb-16">
                         <h1>
                             <Link href={`/post/${post.postRef.slug}`}>
-                                {post.postData?.Title}
+                                {post.postData?.title}
                             </Link>
                         </h1>
                         <ReactMarkdown>{post.postText}</ReactMarkdown>
-                        <Link href={`/post/${post.postRef.slug}`}>Permalink</Link>
+                        <Link href={`/post/${post.postRef.slug}`}>
+                            Permalink
+                        </Link>
                     </div>
                 );
             })}
