@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import EVLogo from "@/public/logo.svg";
-import { WalletAdvancedDefault } from "@coinbase/onchainkit/wallet";
+import { WalletIsland } from "@coinbase/onchainkit/wallet";
 
 export default function TopBar() {
     return (
@@ -14,7 +14,7 @@ export default function TopBar() {
                         priority
                     />
                 </Link>
-                <WalletAdvancedDefault />
+                <WalletIsland />
             </nav>
         </header>
     );
