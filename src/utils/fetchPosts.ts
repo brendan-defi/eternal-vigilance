@@ -1,4 +1,4 @@
-import { postsIndex } from "@/src/assets/posts/postsIndex";
+import { postsIndex } from "@/src/assets/posts/_postsIndex";
 import fetchPostText from "@/src/utils/fetchPostText";
 import parsePost from "@/src/utils/parsePost";
 import { Post } from "@/src/types/post";
