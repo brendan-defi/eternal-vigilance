@@ -2,81 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    /* Global Defaults */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+/* Global Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    html,
-    body,
-    #root {
-        height: 100%;
-        width: 100%;
-    }
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+}
 
-    body {
-        background-color: #e5e5e5;
-    }
+body {
+    background-color: #e5e5e5;
+}
 
-    /* App Spacing */
-    #root {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
+/* App Spacing */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    #Sidebar {
-        min-height: 100vh;
-    }
+#Sidebar {
+    min-height: 100vh;
+}
 
-    /* Text */
-    h1 {
-        font-size: 2rem;
-    }
+/* Text */
+h1 {
+    font-size: 2rem;
+}
 
-    h2 {
-        font-size: 1.5rem;
-    }
+h2 {
+    font-size: 1.5rem;
+}
 
-    p {
-        margin-bottom: 0.75rem;
-    }
+p {
+    margin-bottom: 0.75rem;
+}
 
-    /* Nav */
-    #Sidebar li {
-        list-style: none;
-        font-size: 1.25rem;
-    }
+/* Nav */
+#Sidebar li {
+    list-style: none;
+    font-size: 1.25rem;
+}
 
-    /* Lists */
-    ul>li {
-        list-style-type: disc;
-    }
+/* Lists */
+ul>li {
+    list-style-type: disc;
+}
 
-    ol>li {
-        list-style-type: decimal;
-    }
+ol>li {
+    list-style-type: decimal;
+}
 
-    ul,
-    ol {
-        margin-left: 1rem;
-        list-style-position: inside;
-    }
+ul,
+ol {
+    margin-left: 1rem;
+    list-style-position: inside;
+}
 
-    li>ul,
-    li>ol {
-        margin-left: 1rem;
-    }
+li>ul,
+li>ol {
+    margin-left: 1rem;
+}
 
-    li:last-child {
-        margin-bottom: 1rem;
-    }
+li:last-child {
+    margin-bottom: 1rem;
+}
 
-    /* Anchors */
-    a:hover {
-        color: purple;
-    }
+/* Anchors */
+a:hover {
+    color: purple;
 }
